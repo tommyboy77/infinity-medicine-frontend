@@ -1,0 +1,354 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+/* Light theme */
+--color-infin: #121c26;              /* almost black blue-grey primary */
+--color-infin-secondary: #3a506b;    /* slightly lighter, more saturated secondary */
+--color-infin-teritiary: #5f7a99;    /* light blue-grey tertiary */
+--color-infin-alt: #607d8b;          /* alternative accent */
+--color-infin-darkeralt: #1f2a35;    /* darker alternative */
+--color-infin-pritext: #0f141a;      /* primary text */
+--color-infin-sectext: #3c4a59;      /* secondary text */
+--color-infin-pribg: #e6ebf0;        /* primary background */
+--color-infin-secbg: #fcfcfc;        /* secondary background */
+--color-infin-streak: #4a90e2;       /* highlight / streak */
+--color-infin-error: #e74c3c;        /* error */
+--color-infin-success: #27ae60;      /* success */
+
+/* Dark theme */
+--color-infin-darkpritext: #e6ebf0;  /* readable text on dark bg */
+--color-infin-darksectext: #aab7c4;  /* secondary dark text */
+--color-infin-darkpribg: #121c26;    /* dark primary bg */
+--color-infin-darksecbg: #1f2a35;    /* dark secondary bg */
+
+  --spacing-128: 32rem;
+  --spacing-144: 36rem;
+  --spacing-A4W: 794px;
+  --spacing-A4H: 1123px;
+  --spacing-2page: 2244px;
+  --spacing-75vh: 75vh;
+  /* Define other tokens as needed... */
+}
+
+html.dark {
+    filter: invert(1) hue-rotate(180deg);
+    background-color: #111;
+}
+
+html.dark img,
+html.dark video {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+header {
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease, opacity 0.3s ease;
+}
+
+header.scrolled {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+section {
+    border-bottom: 1.5px solid #e5e7eb;
+}
+
+.pattern {
+    position: relative;
+    background-image:
+        linear-gradient(to right, rgba(209, 213, 219, 0.1) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(209, 213, 219, 0.1) 1px, transparent 1px);
+    background-size: 25px 25px;
+    overflow: hidden;
+}
+
+.pattern::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 1));
+    pointer-events: none;
+    z-index: 1;
+}
+
+.letter-btn {
+    font-size: 2rem;
+    font-weight: 200;
+     color: #9ca3af;
+    transition: all 0.25s ease;
+}
+
+.letter-btn:hover {
+    color: #111827;
+    transform: scale(1.1);
+}
+
+.letter-btn.active {
+    color: #111827;
+    transform: scale(1.1);
+}
+.letter-btn.active span {
+    opacity: 1;
+    scale: 1;
+}
+
+.floating-item:nth-child(1) {
+    animation-duration: 3s;
+}
+
+.floating-item:nth-child(2) {
+    animation-duration: 4s;
+}
+
+.floating-item:nth-child(3) {
+    animation-duration: 4.5s;
+}
+
+.floating-item:nth-child(4) {
+    animation-duration: 4.5s;
+}
+
+.floating-item:nth-child(5) {
+    animation-duration: 3.2s;
+}
+
+.floating-item:nth-child(6) {
+    animation-duration: 3.2s;
+}
+
+.floating-item:nth-child(7) {
+    animation-duration: 3.2s;
+}
+
+#textloop {
+    border: 2px solid #e5e7eb;
+    border-radius: 15px;
+}
+
+
+
+
+
+#productScroller::-webkit-scrollbar {
+    display: none;
+}
+
+#productScroller {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overscroll-behavior: contain;
+    scroll-behavior: auto;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+}
+
+
+@layer components {
+
+  /* Product Card Base */
+  .product-card {
+    @apply flex flex-col items-center justify-start min-w-[280px] rounded-xl overflow-hidden max-w-[280px] flex-shrink-0 bg-[#feffff] rounded-xl border border-infin-secondary/10  shadow transition-transform duration-200 ease-in-out hover:shadow-xl hover:-translate-y-1 cursor-grab active:cursor-grabbing;
+  }
+
+  /* Product Card Image */
+  .product-card img {
+    @apply w-full h-full  object-contain mx-auto border-b border-gray-200;
+  }
+
+  /* Product Card Floating Items */
+  .floating-item {
+    @apply absolute text-sm text-gray-700 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full shadow-md ;
+  }
+
+  /* Product Card Button - Filled */
+  .btn-lg {
+    @apply hover:cursor-pointer px-6 py-2 bg-gradient-to-r from-infin to-infin-secondary hover:from-infin-teritiary hover:to-infin text-white font-semibold rounded-lg shadow-lg transform transition duration-300 ease-in-out;
+  }
+
+  /* Product Card Button - Outline */
+  .btn-lg-outline {
+    @apply hover:cursor-pointer px-6 py-2 border border-infin/70 text-infin/70 hover:bg-gradient-to-r from-infin-teritiary/40 to-infin/40 font-semibold rounded-lg shadow-md transform transition duration-300 ease-in-out;
+  }
+  /* Spacious Tracking */
+  .extra-tracking{
+    @apply tracking-[0.3em]
+  }
+  .title{
+    @apply text-3xl md:text-5xl font-serif
+  }
+  .header{
+    @apply text-xl md:text-4xl  font-bold
+  }
+  .subheader{
+    @apply text-sm md:text-base text-infin-secondary uppercase
+  }
+  .bodytext{
+    @apply md:text-xl text-infin-secondary
+  }
+  .linktext{
+    @apply text-sm md:text-base text-infin-secondary uppercase hover:text-infin
+  }
+  .inputbox{
+    @apply px-3 py-2 rounded-lg text-infin border border-gray-300 focus:outline-infin focus:outline-1 bg-infin-secbg
+  }
+  .pilltainer{
+    @apply inline-flex items-center justify-center rounded-full border border-infin/15 bg-infin/10 px-5 py-2 text-xs font-semibold uppercase tracking-[0.35em] text-infin/70
+  }
+  /* Product Card Form Control (if any forms inside cards) */
+  .form-control {
+    @apply flex flex-col gap-1 w-full;
+  }
+  .blurred-bg{
+    @apply backdrop-blur-md transition-all duration-700 ease-out border-gray-300/20 bg-infin-secbg/90
+  }
+  .dropdown {
+    @apply bg-infin-secbg/80 text-infin-sectext z-50 max-h-(--radix-dropdown-menu-content-available-height) min-w-[8rem] origin-(--radix-dropdown-menu-content-transform-origin) overflow-x-hidden overflow-y-auto rounded-md border p-1 shadow-md w-60
+  }
+}
+
+.floating-item {
+
+  animation: floatY 4s ease-in-out infinite alternate;
+}
+/* Floating animation keyframes */
+@keyframes floatY {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-30px); }
+}
+
+.animate-floatY {
+  animation: floatY 4s ease-in-out infinite alternate;
+}
+
+
+.scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+@media (min-width: 40rem) {
+    .container {
+        max-width: 40rem;
+    }
+}
+@media (min-width: 48rem) {
+    .container {
+        max-width: 48rem;
+    }
+}
+@media (min-width: 64rem) {
+    .container {
+        max-width: 64rem;
+    }
+}
+@media (min-width: 80rem) {
+    .container {
+        max-width: 80rem;
+    }
+}
+
+
+
+.container {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+
+/* Fade in Left */
+.fade-left-enter-active,
+.fade-left-leave-active {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.fade-left-enter-from,
+.fade-left-leave-to {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.fade-left-enter-to,
+.fade-left-leave-from {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* Fade in Right */
+
+.fade-right-enter-active,
+.fade-right-leave-active {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.fade-right-enter-from,
+.fade-right-leave-to {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.fade-right-enter-to,
+.fade-right-leave-from {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fade in Up */
+.fade-up-enter-active,
+.fade-up-leave-active {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.fade-up-enter-from,
+.fade-up-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.fade-up-enter-to,
+.fade-up-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Fade in Down */
+.fade-down-enter-active,
+.fade-down-leave-active {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.fade-down-enter-from,
+.fade-down-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-down-enter-to,
+.fade-down-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
