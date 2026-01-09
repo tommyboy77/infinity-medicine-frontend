@@ -34,11 +34,23 @@
         <h3 class="uppercase text-sm font-bold mb-4">Quick Links</h3>
         <ul class="space-y-2 text-infin-secondary text-sm">
           <li>
+            <RouterLink to="/dermatology" class="hover:text-infin transition"
+              >Dermatology</RouterLink
+            >
+          </li>
+          <li>
+            <RouterLink to="/ophthalmology" class="hover:text-infin transition"
+              >Ophthalmology</RouterLink
+            >
+          </li>
+          <li>
+            <RouterLink to="/support" class="hover:text-infin transition">Support</RouterLink>
+          </li>
+          <li>
             <RouterLink to="/quote" class="hover:text-infin transition">Get Quote</RouterLink>
           </li>
-          <li><RouterLink to="/demo" class="hover:text-infin transition">Demo</RouterLink></li>
           <li>
-            <RouterLink to="/copyrights" class="hover:text-infin transition">Copyrights</RouterLink>
+            <RouterLink to="/demo" class="hover:text-infin transition">Book Demo</RouterLink>
           </li>
         </ul>
       </div>
@@ -48,17 +60,17 @@
         <h3 class="uppercase text-sm font-bold mb-4">Our Partners</h3>
         <ul class="space-y-2 text-infin-secondary text-sm">
           <li>
-            <RouterLink to="/#locations" class="hover:text-infin transition">
+            <RouterLink to="/locations" class="hover:text-infin transition">
               <span class="font-bold text-infin">PGT Egypt </span><br />Egypt
             </RouterLink>
           </li>
           <li>
-            <RouterLink to="/#locations" class="hover:text-infin transition">
+            <RouterLink to="/locations" class="hover:text-infin transition">
               <span class="font-bold text-infin">PGT Oman </span><br />Oman
             </RouterLink>
           </li>
           <li>
-            <RouterLink to="/#locations" class="hover:text-infin transition">
+            <RouterLink to="/locations" class="hover:text-infin transition">
               <span class="font-bold text-infin">PGT UAE </span><br />United Arab Emirates
             </RouterLink>
           </li>

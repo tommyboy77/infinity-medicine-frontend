@@ -6,6 +6,7 @@ import SupportView from '@/views/SupportView.vue'
 import OphthalmologyView from '@/views/Products/OphthalmologyView.vue'
 import DermatologyView from '@/views/Products/DermatologyView.vue'
 import ProductView from '@/views/Products/ProductView.vue'
+import QuoteView from '@/views/QuoteView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -40,6 +41,12 @@ const router = createRouter({
       name: 'dermatology',
       path: '/dermatology',
       component: DermatologyView
+
+    },
+    {
+      name: 'quote',
+      path: '/quote',
+      component: QuoteView
 
     },
 
