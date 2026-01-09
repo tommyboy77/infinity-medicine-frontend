@@ -5,13 +5,15 @@
       <div
         class="pointer-events-none absolute inset-0 bg-gradient-to-br dark:bg-infin dark:bg-none from-infin-pribg/10 via-infin-secbg/30 to-infin-pribg/30"
       ></div>
-      <div class="absolute -top-28 left-12 h-56 w-56 rounded-full bg-infin/15 blur-3xl"></div>
+      <div
+        class="absolute -top-28 left-12 h-56 w-56 rounded-full bg-infin/15 dark:bg-white/15 blur-3xl"
+      ></div>
       <div class="absolute bottom-10 right-16 h-64 w-64 rounded-full blur-3xl"></div>
       <div class="relative container py-16 grid gap-12 lg:grid-cols-[minmax(0,1fr)_360px]">
         <div class="space-y-8">
           <div class="space-y-5">
             <span
-              class="inline-flex items-center justify-center rounded-full border border-infin/20 bg-infin/10 px-5 py-2 text-xs font-semibold uppercase tracking-[0.35em] text-infin/80"
+              class="inline-flex items-center justify-center rounded-full border border-infin/20 dark:border-white/20 dark:bg-white/10 dark:text-white bg-infin/10 px-5 py-2 text-xs font-semibold uppercase tracking-[0.35em] text-infin/80"
               >About Infinity Medicals</span
             >
             <h1 class="text-4xl font-bold tracking-tight text-infin dark:text-white md:text-5xl">
@@ -392,7 +394,7 @@
         <div class="relative space-y-10">
           <div class="relative pl-12">
             <span
-              class="absolute left-0 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-infin/15 text-sm font-semibold text-infin dark:text-white ring-2 ring-infin/20"
+              class="absolute left-0 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-infin/15 dark:bg-white/15 text-sm font-semibold text-infin dark:text-white ring-2 ring-infin/20"
               >1</span
             ><span
               class="absolute left-4 top-9 h-full w-px bg-infin-teritiary/30"
@@ -407,7 +409,7 @@
           </div>
           <div class="relative pl-12">
             <span
-              class="absolute left-0 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-infin/15 text-sm font-semibold text-infin dark:text-white ring-2 ring-infin/20"
+              class="absolute left-0 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-infin/15 dark:bg-white/15 text-sm font-semibold text-infin dark:text-white ring-2 ring-infin/20"
               >2</span
             ><span
               class="absolute left-4 top-9 h-full w-px bg-infin-teritiary/30"
@@ -422,7 +424,7 @@
           </div>
           <div class="relative pl-12">
             <span
-              class="absolute left-0 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-infin/15 text-sm font-semibold text-infin dark:text-white ring-2 ring-infin/20"
+              class="absolute left-0 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-infin/15 dark:bg-white/15 text-sm font-semibold text-infin dark:text-white ring-2 ring-infin/20"
               >3</span
             ><span
               class="absolute left-4 top-9 h-full w-px bg-infin-teritiary/30"
@@ -437,7 +439,7 @@
           </div>
           <div class="relative pl-12">
             <span
-              class="absolute left-0 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-infin/15 text-sm font-semibold text-infin dark:text-white ring-2 ring-infin/20"
+              class="absolute left-0 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-infin/15 dark:bg-white/15 text-sm font-semibold text-infin dark:text-white ring-2 ring-infin/20"
               >4</span
             ><span
               class="absolute left-4 top-9 h-full w-px bg-infin-teritiary/30"
@@ -452,7 +454,7 @@
           </div>
           <div class="relative pl-12">
             <span
-              class="absolute left-0 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-infin/15 text-sm font-semibold text-infin dark:text-white ring-2 ring-infin/20"
+              class="absolute left-0 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-infin/15 dark:bg-white/15 text-sm font-semibold text-infin dark:text-white ring-2 ring-infin/20"
               >5</span
             ><span
               class="absolute left-4 top-9 h-full w-px bg-infin-teritiary/30"
@@ -466,7 +468,7 @@
           </div>
           <div class="relative pl-12">
             <span
-              class="absolute left-0 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-infin/15 text-sm font-semibold text-infin dark:text-white ring-2 ring-infin/20"
+              class="absolute left-0 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-infin/15 dark:bg-white/15 text-sm font-semibold text-infin dark:text-white ring-2 ring-infin/20"
               >6</span
             ><span
               class="absolute left-4 top-9 h-full w-px bg-infin-teritiary/30"
@@ -483,7 +485,7 @@
           </div>
           <div class="relative pl-12">
             <span
-              class="absolute left-0 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-infin/15 text-sm font-semibold text-infin dark:text-white ring-2 ring-infin/20"
+              class="absolute left-0 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-infin/15 dark:bg-white/15 text-sm font-semibold text-infin dark:text-white ring-2 ring-infin/20"
               >7</span
             >
             <h3 class="text-lg font-semibold dark:text-white text-infin">Customer Satisfaction</h3>

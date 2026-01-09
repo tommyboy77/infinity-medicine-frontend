@@ -45,7 +45,7 @@
         <div class="grid gap-6 md:grid-cols-2">
           <div
             data-slot="card"
-            class="text-infin dark:text-white flex flex-col gap-6 rounded-xl border py-6 border-infin-teritiary/30 dark:border-infin/30 bg-infin-secbg/90 dark:bg-infin-darksecbg/90 shadow-[0_18px_40px_-32px_rgba(15,23,42,0.5)] transition-shadow hover:shadow-[0_24px_60px_-30px_rgba(15,23,42,0.55)] md:col-span-2 ring-1 ring-infin/30"
+            class="text-infin dark:text-white flex flex-col dark:shadow-white/10/20 gap-6 rounded-xl border py-6 border-infin-teritiary/30 dark:border-infin/30 bg-infin-secbg/90 dark:bg-infin-darksecbg/90 shadow-[0_18px_40px_-32px_rgba(15,23,42,0.5)] transition-shadow hover:shadow-[0_24px_60px_-30px_rgba(15,23,42,0.55)] md:col-span-2 ring-1 ring-infin/30"
           >
             <div data-slot="card-content" class="space-y-6 p-8">
               <div class="flex flex-wrap items-start justify-between gap-4">
@@ -139,7 +139,7 @@
           </div>
           <div
             data-slot="card"
-            class="text-infin dark:text-white flex flex-col gap-6 rounded-xl border py-6 border-infin-teritiary/30 dark:border-infin/30 bg-infin-secbg/90 dark:bg-infin-darksecbg/90 shadow-[0_18px_40px_-32px_rgba(15,23,42,0.5)] transition-shadow hover:shadow-[0_24px_60px_-30px_rgba(15,23,42,0.55)]"
+            class="text-infin dark:text-white flex flex-col dark:shadow-white/10 gap-6 rounded-xl border py-6 border-infin-teritiary/30 dark:border-infin/30 bg-infin-secbg/90 dark:bg-infin-darksecbg/90 shadow-[0_18px_40px_-32px_rgba(15,23,42,0.5)] transition-shadow hover:shadow-[0_24px_60px_-30px_rgba(15,23,42,0.55)]"
           >
             <div data-slot="card-content" class="space-y-6 p-8">
               <div class="flex flex-wrap items-start justify-between gap-4">
@@ -210,7 +210,7 @@
           </div>
           <div
             data-slot="card"
-            class="text-infin dark:text-white flex flex-col gap-6 rounded-xl border py-6 border-infin-teritiary/30 dark:border-infin/30 bg-infin-secbg/90 dark:bg-infin-darksecbg/90 shadow-[0_18px_40px_-32px_rgba(15,23,42,0.5)] transition-shadow hover:shadow-[0_24px_60px_-30px_rgba(15,23,42,0.55)]"
+            class="text-infin dark:text-white flex flex-col dark:shadow-white/10/20 gap-6 rounded-xl border py-6 border-infin-teritiary/30 dark:border-infin/30 bg-infin-secbg/90 dark:bg-infin-darksecbg/90 shadow-[0_18px_40px_-32px_rgba(15,23,42,0.5)] transition-shadow hover:shadow-[0_24px_60px_-30px_rgba(15,23,42,0.55)]"
           >
             <div data-slot="card-content" class="space-y-6 p-8">
               <div class="flex flex-wrap items-start justify-between gap-4">
@@ -281,7 +281,7 @@
           </div>
           <div
             data-slot="card"
-            class="text-infin dark:text-white flex flex-col gap-6 rounded-xl border py-6 border-infin-teritiary/30 dark:border-infin/30 bg-infin-secbg/90 dark:bg-infin-darksecbg/90 shadow-[0_18px_40px_-32px_rgba(15,23,42,0.5)] transition-shadow hover:shadow-[0_24px_60px_-30px_rgba(15,23,42,0.55)]"
+            class="text-infin dark:text-white flex flex-col dark:shadow-white/10/20 gap-6 rounded-xl border py-6 border-infin-teritiary/30 dark:border-infin/30 bg-infin-secbg/90 dark:bg-infin-darksecbg/90 shadow-[0_18px_40px_-32px_rgba(15,23,42,0.5)] transition-shadow hover:shadow-[0_24px_60px_-30px_rgba(15,23,42,0.55)]"
           >
             <div data-slot="card-content" class="space-y-6 p-8">
               <div class="flex flex-wrap items-start justify-between gap-4">

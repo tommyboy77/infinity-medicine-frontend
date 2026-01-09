@@ -16,7 +16,7 @@
           <div v-reveal="'left'" class="lg:col-span-7 space-y-8">
             <div class="space-y-4">
               <div
-                class="inline-flex items-center rounded-full border border-infin/20 bg-infin/5 px-3 py-1 text-xs font-medium text-infin dark:text-white uppercase tracking-wider"
+                class="inline-flex items-center rounded-full border border-infin/20 bg-infin/5 dark:border-white/20 dark:bg-white/10 dark:text-white/80 px-3 py-1 text-xs font-medium text-infin dark:text-white uppercase tracking-wider"
               >
                 Medical Aesthetic Device
               </div>
