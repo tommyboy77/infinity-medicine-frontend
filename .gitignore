@@ -19,6 +19,8 @@ coverage
 *.mov
 .DS_Store
 
+.env
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
