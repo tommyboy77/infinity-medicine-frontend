@@ -36,10 +36,10 @@
     <section
       v-reveal="'down'"
       v-if="!productStore.loading && productStore.dermatology.length > 0"
-      class="container pt-16"
+      class="pb-4 pt-16"
       id="ourproducts"
     >
-      <div class="flex items-center justify-between space-y-6 mx-auto mb-2">
+      <div class="flex container items-center justify-between space-y-6 mx-auto mb-2">
         <div>
           <h3 class="subheader mb-2">Our Products</h3>
           <h3 class="title">Dermatology Solutions</h3>
@@ -53,7 +53,7 @@
     <section
       v-reveal="'left'"
       v-else-if="productStore.loading"
-      class="container pt-16 flex items-center justify-center"
+      class="pt-16 pb-4 flex items-center justify-center"
       id="ourproducts"
     >
       <div
@@ -66,10 +66,10 @@
     <section
       v-reveal="'right'"
       v-if="!productStore.loading && productStore.ophthalmology.length > 0"
-      class="container pb-16"
+      class="py-16 pb-4"
       id="ourproducts"
     >
-      <div class="flex items-center justify-between space-y-6 mx-auto mb-2">
+      <div class="flex container items-center justify-between space-y-6 mx-auto mb-2">
         <div>
           <h3 class="subheader mb-2">Specialized Equipment</h3>
           <h3 class="title">Ophthalmology Solutions</h3>
