@@ -204,7 +204,7 @@ section {
     @apply text-sm md:text-base text-infin-secondary dark:text-gray-400 uppercase hover:text-infin dark:hover:text-white;
   }
   .inputbox {
-    @apply px-3 py-2 rounded-lg text-infin dark:text-white border border-gray-300 focus:outline-infin focus:outline-1 bg-infin-secbg;
+    @apply px-3 py-2 rounded-lg text-infin dark:text-white border border-gray-300 dark:border-infin-teritiary/30 focus:outline-infin focus:outline-1 dark:bg-infin-darksecbg bg-infin-secbg;
   }
   .pilltainer {
     @apply inline-flex items-center justify-center rounded-full border border-infin/15 dark:bg-white/10 dark:text-white/80 dark:border-white/5 bg-infin/10 px-5 py-2 text-xs font-semibold uppercase tracking-[0.35em] dark:text-white/70 text-infin/70;

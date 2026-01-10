@@ -13,7 +13,7 @@
         <div class="space-y-8">
           <div class="space-y-5">
             <span
-              class="inline-flex items-center justify-center rounded-full border border-infin/20 dark:border-white/20 dark:bg-white/10 dark:text-white bg-infin/10 px-5 py-2 text-xs font-semibold uppercase tracking-[0.35em] text-infin/80"
+              class="inline-flex items-center justify-center rounded-full border border-infin/20 dark:border-white/20 dark:bg-white/10 dark:text-white/80 bg-infin/10 px-5 py-2 text-xs font-semibold uppercase tracking-[0.35em] text-infin/80"
               >About Infinity Medicals</span
             >
             <h1 class="text-4xl font-bold tracking-tight text-infin dark:text-white md:text-5xl">
