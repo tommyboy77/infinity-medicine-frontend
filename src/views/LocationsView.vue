@@ -358,8 +358,6 @@
         </p>
         <div class="flex flex-wrap items-center justify-center gap-4">
           <a data-slot="button" class="btn-lg" href="/quote">Talk to Sales</a
-          ><a data-slot="button" class="btn-lg-outline" href="mailto:info@infinitymedicals.com"
-            >Email Support</a
           >
         </div>
       </div>
