@@ -150,13 +150,16 @@ const message = ref<string>('')
 
 const submitNewsletter = async (): Promise<void> => {
   try {
-    const res = await fetch('/subscribe', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: email.value }),
-    })
+    const res = await fetch(
+      `${import.meta.env.VITE_API_URL}/api/newsletter/subscribe`,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email.value }),
+      },
+    )
 
-    const result: { success: boolean; message: string } = await res.json()
+    const result = await res.json()
     message.value = result.message
 
     if (result.success) {
@@ -166,4 +169,5 @@ const submitNewsletter = async (): Promise<void> => {
     message.value = 'An error occurred. Please try again later.'
   }
 }
+
 </script>

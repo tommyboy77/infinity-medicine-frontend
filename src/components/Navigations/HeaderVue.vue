@@ -6,6 +6,7 @@
       <!-- Logo -->
       <div class="w-64 flex items-center">
         <div class="flex items-center gap-2">
+          <img class="h-8" src="@/assets/logo.png" alt="">
           <span class="text-lg font-bold tracking-extra-trackinge text-infin dark:text-white"
             >INFINITY MEDICALS</span
           >
