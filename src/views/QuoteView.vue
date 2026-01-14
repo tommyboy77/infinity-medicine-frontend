@@ -238,11 +238,15 @@
                 ></textarea>
               </div>
               <div
-                v-if="date"
+                v-if="date || interest"
                 class="bg-infin/5 dark:bg-white/5 dark:border-white/20 border border-infin/20 rounded-lg p-4"
               >
-                <p class="text-sm text-infin dark:text-white">
-                  <span class="font-semibold">Demo Date:</span>
+                <p v-if="interest" class="text-sm text-infin dark:text-white">
+                  <span class="font-semibold">Interested in:</span>
+                  {{ interest }}
+                </p>
+                <p v-if="date" class="text-sm text-infin dark:text-white">
+                  <span class="font-semibold"> - Demo Date:</span>
                   {{
                     new Date(date.toString()).toLocaleDateString('en', {
                       day: 'numeric',
@@ -250,8 +254,9 @@
                       year: 'numeric',
                     })
                   }}
-                </p>
+              </p>
               </div>
+
               <button data-slot="button" class="btn-lg w-full" type="submit">Submit Request</button>
             </form>
           </div>
